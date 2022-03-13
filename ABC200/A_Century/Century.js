@@ -3,7 +3,7 @@ const main = (input) => {
 	const N = parseInt(args, 10);
 
 	const century = Math.ceil(N / 100);
-	console.log(centuy);
+	console.log(century);
 
 main(require('fs').readFileSync('/dev/stdin', 'utf8'));  
 
