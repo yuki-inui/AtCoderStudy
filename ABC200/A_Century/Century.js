@@ -4,6 +4,6 @@ const main = (input) => {
 
 	const century = Math.ceil(N / 100);
 	console.log(century);
-
+}
 main(require('fs').readFileSync('/dev/stdin', 'utf8'));  
 
