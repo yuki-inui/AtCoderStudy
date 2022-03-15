@@ -13,7 +13,7 @@ const main = (input) => {
 	console.log(DecNum);
 	};
 
-	let FinalNum(n) {
+	let FinalNum (n) => {
 		for(n <= K) {
 		let FNum = WantNumber(i);
 	}
