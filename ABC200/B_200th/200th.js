@@ -3,9 +3,9 @@ const main = (input) => {
 	const N = parseInt(args, 10);
 	const K = parseInt(args[1], 10);
 	
-	const WantNumber = () => {
-	let DecNum = 0;
-	if( N % 200 == 0){
+	let  WantNumber = () => {
+	let DecNum;
+	if( N % 200 === 0){
 		DecNum = N / 200;
 	} else {
 		DecNum = N + `200`;
@@ -13,12 +13,13 @@ const main = (input) => {
 	console.log(DecNum);
 	};
 
-	while(i <= K) {
-		let FinalNum = WantNumber(i);
-	
-	console.log(FinalNumber);
+	let FinalNum(n) {
+		for(n <= K) {
+		let FNum = WantNumber(i);
 	}
-}
+	console.log(FNum);
+	};
+};
 main(require('fs').readFileSync('/dev/stdin', 'utf8'));  
 
 
