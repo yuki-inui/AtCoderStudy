@@ -1,13 +1,7 @@
-const main = (input) => {
-	const args = input.split(" ");
-	const A = input.split(" ").map((n) => parseInt(n, 10));
-
-	A.sort((n, m) => n > m ? -1 : 1);
-	if(A[2] - A[1] == A[1] - A[0]) {
-		console.log("YES");
-	}else{
-		console.log("NO");
-	}
-	};
-main(require('fs').readFileSync('/dev/stdin', 'utf8'));  
+function main(input) {
+  const a = input.trim().split(" ").map(Number);
+  a.sort((x,y) => x-y);
+  console.log(a[1]-a[0]==a[2]-a[1] ? "Yes" : "No");
+}
+main(require("fs").readFileSync("/dev/stdin","utf8")); 
 
