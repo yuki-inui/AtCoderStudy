@@ -1,10 +1,9 @@
 const main = (input) => {
 	const args = input.split(" ");
-	const A1 = parseInt(args, 10);
-	const A2 = parseInt(args[1], 10);
-	const A3 = parseInt(args[2], 10);
+	const A = input.split(" ").map((n) => parseInt(n, 10));
 
-	if(A3 - A2 == A2 - A1) {
+	A.sort((n, m) => n > m ? -1 : 1);
+	if(A[2] - A[1] == A[1] - A[0]) {
 		console.log("YES");
 	}else{
 		console.log("NO");
