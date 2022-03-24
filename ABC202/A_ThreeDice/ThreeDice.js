@@ -5,7 +5,7 @@ const main = (input) => {
 	const N3 = parseInt(args[2], 10);
 
 	console.log(
-	Math.abs(N1 - 7) + Math.abs(N2 -7) + Math.abs(N3 -7));
+	Math.abs(N1 - 7) + Math.abs(N2 -7) + Math.abs(N3 -7));  //Math.absで絶対値をとる
 	
 	};
 main(require('fs').readFileSync('/dev/stdin', 'utf8'));
